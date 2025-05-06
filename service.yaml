@@ -3,16 +3,15 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: lw
-    app.kubernetes.io/instance: argocdfile1
-  name: lw
+    app: lwargocd
+  name: lwargocd
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: lw
+    app: lwargocd
   type: LoadBalancer
 status:
   loadBalancer: {}
